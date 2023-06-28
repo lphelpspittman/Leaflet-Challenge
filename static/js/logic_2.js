@@ -72,7 +72,7 @@ d3.json(queryUrl).then(function (data) {
             layer.bindPopup(`<h3>${feature.properties.place}</h3><hr><p>${new Date(feature.properties.time)}</p><h3>Magnitude: ${feature.properties.mag.toLocaleString()}</h3>
             <h3>Depth: ${feature.geometry.coordinates[2].toLocaleString()}</h3>`);
         }
-    }).addTo(myMap);
+    }).addTo(earthquakes);
 
 // data with d3 is only available above this point
 });
