@@ -10,13 +10,17 @@ console.log("Start of map using logic_1");
 // and color as a function of depth: funciton called markerColor()
 // with an overall styleInfo function tha t calls both styleInfo()
 
+
+
 // Create the base layers.
 let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' + 
+    '<br> Lead Analyst: Lauren <a href="https://github.com/lphelpspittman/Leaflet-Challenge">Github Repo</a>'
 })
 
 let topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)' + 
+    '<br> Lead Analyst: Lauren <a href="https://github.com/lphelpspittman/Leaflet-Challenge">Github Repo</a>'
 });
 
 // Create a baseMaps object.
