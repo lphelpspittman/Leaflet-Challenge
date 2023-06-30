@@ -51,7 +51,7 @@ let myMap = L.map("map", {
       37.09, -95.71
     ],
     zoom: 3.5,
-    layers: [street, earthquakes]
+    layers: [topo, earthquakes, tectonic]
 });
 
 // Create a layer control.
